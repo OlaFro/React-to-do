@@ -1,0 +1,19 @@
+.Main {
+  border: 1px solid black;
+  width: 50vw;
+  height: 70vh;
+  margin-top: 6rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header {
+  color: black;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+}
