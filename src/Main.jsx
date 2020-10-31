@@ -82,9 +82,9 @@ export default class Main extends Component {
                     <h1>To-do list</h1>
                 </div>
                 <AddTask get={this.getTask} />
-                <h3>Task to do</h3>
+                <h3>Tasks to do </h3>
                 {displayTasks}
-                <h3>Task done</h3>
+                <h3>Tasks done</h3>
                 {displayDoneTasks}
             </div>
         )
