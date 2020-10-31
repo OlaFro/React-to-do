@@ -6,7 +6,8 @@ export default class AddTask extends Component {
     constructor(props){
         super(props);
         this.state={
-            task: ""
+            task: "",
+            isDone: false
         }
     }
 

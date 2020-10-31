@@ -7,7 +7,8 @@ export default class Display extends Component {
         super(props);
         this.state={
             isEditing: false,
-            task: this.props.content
+            task: this.props.content,
+            isDone: false,
         }
     }
     handleRemove = ()=>{
@@ -23,7 +24,6 @@ export default class Display extends Component {
     handleUpdate=(e)=>{
         e.preventDefault();
         this.props.updateTask(this.props.id, this.state.task)
-    console.log("update");
         this.setState({
             isEditing: false
         })
@@ -36,11 +36,21 @@ export default class Display extends Component {
         })
     }
 
+    handleDone = (e) =>{
+        e.preventDefault()
+        this.setState({
+            isDone: !this.state.isDone
+        })
+        this.props.checkDone(this.props.id, this.state.task)
+    }
+
     render() {
+        
         let result;
         if(this.state.isEditing){
             result = (
                 <div>
+                    
                     <form onSubmit={this.handleUpdate} >
                         <input className="update" type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
                         <button>Save</button>
@@ -49,14 +59,20 @@ export default class Display extends Component {
             )
         } else {
             result = <div className="display">
-                
+             
+            <button onClick={this.handleDone}>done</button>    
             {this.props.content}
             <div>
             <button onClick={this.toggleForm}>edit</button>
             <button onClick={this.handleRemove}>X</button>
             </div>
         </div>
+        
         }
-        return result
+        return (<div>
+        
+        {result}   
+        </div>)
+        
     }
 }
