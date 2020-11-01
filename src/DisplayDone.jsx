@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./DisplayDone.css"
+import "./display.css"
 
 export default class DisplayDone extends Component {
 
@@ -28,12 +28,12 @@ export default class DisplayDone extends Component {
         return (
             <div>
                 <div className="display">
-             
-             <button onClick={this.handleDone}>undone</button>    
-             {this.props.content}
              <div>
-             <button onClick={this.handleRemove}>X</button>
+             <button className="doneButton" onClick={this.handleDone}>undone</button>    
+             {this.props.content}
              </div>
+             <button onClick={this.handleRemove}>X</button>
+             
          </div>
             </div>
         )

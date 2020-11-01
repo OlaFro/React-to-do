@@ -1,19 +1,60 @@
 .Main {
-  border: 1px solid white;
-  width: 50vw;
-  height: 70vh;
-  margin-top: 6rem;
+  background-color: rgb(242, 242, 242, 0.4);
+  width: 600px;
+  height: 80vh;
+  margin-top: 2rem;
   text-align: center;
-  border-radius: 10px;
+  box-shadow: 10px 10px 12px rgba(58, 58, 58, 0.4);
 }
 
 .header {
-  color: black;
-  padding: 1rem;
-  border-bottom: 1px solid white;
-  border-radius: 10px;
+  background-color: #2a527a;
+  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  margin: 0;
+  font-size: 3rem;
+  font-weight: 100;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  height: 0.5px;
+  width: 330px;
+  background-color: rgb(255, 255, 255, 0.4);
+  position: absolute;
+  left: -5px;
+  top: 62px;
+}
+
+button {
+  background-color: #e6fa3c;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.6rem;
+  border-radius: 0;
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+.category {
+  text-align: left;
+  padding-left: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.category::after {
+  content: "";
+  height: 2px;
+  width: 120px;
+  background-color: rgba(0, 0, 0);
+  position: absolute;
+  left: 12px;
+  top: 21px;
 }

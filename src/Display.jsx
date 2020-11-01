@@ -49,10 +49,10 @@ export default class Display extends Component {
         let result;
         if(this.state.isEditing){
             result = (
-                <div>
+                <div className="display">
                     
                     <form onSubmit={this.handleUpdate} >
-                        <input className="update" type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
+                        <input type="text" value={this.state.task} name="task" onChange={this.handleChange}/>
                         <button>Save</button>
                     </form>
                 </div>
@@ -60,11 +60,13 @@ export default class Display extends Component {
         } else {
             result = <div className="display">
              
-            <button onClick={this.handleDone}>done</button>    
+             <div>
+            <button className="doneButton" onClick={this.handleDone}>done</button>    
             {this.props.content}
+            </div>
             <div>
             <button onClick={this.toggleForm}>edit</button>
-            <button onClick={this.handleRemove}>X</button>
+            <button className="deleteButton"onClick={this.handleRemove}>X</button>
             </div>
         </div>
         

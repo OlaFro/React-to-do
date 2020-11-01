@@ -1,13 +1,25 @@
-.addTask {
-  padding: 1rem 0 1rem 0;
-  border-bottom: 1px solid white;
-}
 label {
   padding: 0.4rem;
 }
 
-button {
-  border-radius: 999px;
-  border: 1px solid black;
-  margin: 0.2rem;
+.addTaskInput {
+  margin: 0.4rem;
+  font-family: "Work Sans", sans-serif;
+
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.openAddTaskButton {
+  margin-bottom: 13px;
+}
+
+.addTaskButton {
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  margin-bottom: 18px;
 }

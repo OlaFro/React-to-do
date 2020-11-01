@@ -79,12 +79,14 @@ export default class Main extends Component {
         return (
             <div className="Main">
                 <div className="header">
-                    <h1>To-do list</h1>
+                    <h1>Your to-do app</h1>
+                    <AddTask get={this.getTask} />
+                    
                 </div>
-                <AddTask get={this.getTask} />
-                <h3>Tasks to do </h3>
+                
+                <h3 className="category">Tasks to do: </h3>
                 {displayTasks}
-                <h3>Tasks done</h3>
+                <h3 className="category">Tasks done:</h3>
                 {displayDoneTasks}
             </div>
         )

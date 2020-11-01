@@ -1,26 +1,28 @@
 .display {
-  padding: 0.7rem;
-  color: black;
-  height: 4rem;
+  padding: 0 0.7rem 0 0.7rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 1.4rem;
-  border-bottom: 1px solid white;
+  margin-bottom: 0.3rem;
 }
 
-.update {
-  margin: 2rem 0 2rem 0;
+.doneButton {
+  margin-right: 0.3rem;
+}
+
+.deleteButton {
+  margin-left: 0.3rem;
 }
 
 input {
   border: none;
-  background-color: #a3e4d7;
+  margin: 0 0.4rem 0 3.43rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
   color: black;
-  border-bottom: 1px solid white;
-  font-size: 1.3rem;
+  border-bottom: 1px solid black;
 }
 
-.update {
-  margin-left: -13rem;
+.display:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
