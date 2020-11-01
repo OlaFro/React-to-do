@@ -19,6 +19,12 @@ input:focus {
   margin-bottom: 13px;
 }
 
+.openAddTaskButton:hover,
+.addTaskButton:hover {
+  color: white;
+  border: 1px solid white;
+}
+
 .addTaskButton {
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   margin-bottom: 18px;

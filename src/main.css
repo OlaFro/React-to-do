@@ -24,9 +24,9 @@ h1 {
 
 h1::after {
   content: "";
-  height: 0.5px;
+  height: 1px;
   width: 330px;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255, 1);
   position: absolute;
   left: -5px;
   top: 62px;
@@ -34,12 +34,18 @@ h1::after {
 
 button {
   background-color: #e6fa3c;
-  border: none;
+  border: 1px solid #e6fa3c;
   font-size: 0.8rem;
   padding: 0.6rem;
   border-radius: 0;
   font-family: "Work Sans", sans-serif;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
 }
 
 .category {
