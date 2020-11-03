@@ -14,7 +14,11 @@ Add a new task to the list. It will appear in the "Task to do" block. If it's
 done, you can move it to the "Tasks done" section, by clicking "done". If You
 want to go back, just click "undone". The tasks can be edited or deleted.
 
-<!-- ## Technologies used -->
+## Technologies used
+
+- React
+- React Components
+- React State and Props
 
 ## Clone the repo and install the app:
 
